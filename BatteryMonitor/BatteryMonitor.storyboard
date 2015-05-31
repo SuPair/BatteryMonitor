@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E11f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="UQS-as-qz8">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Battery Monitor-->
+        <scene sceneID="hi4-Kr-eVK">
+            <objects>
+                <viewController id="cQY-ku-2Kg" customClass="CurrentStatusViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0G2-fX-9Ch"/>
+                        <viewControllerLayoutGuide type="bottom" id="gf9-Mo-0EN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QG0-UQ-CE7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Battery Level: 40%" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pP3-Fj-rAI">
+                                <rect key="frame" x="16" y="288" width="568" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Battery State: Charging" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHw-5T-Q70">
+                                <rect key="frame" x="16" y="320" width="568" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Current Status" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w3r-3S-j0g">
+                                <rect key="frame" x="16" y="256" width="568" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NHw-5T-Q70" firstAttribute="top" secondItem="pP3-Fj-rAI" secondAttribute="bottom" constant="8" id="G9p-SK-OqZ"/>
+                            <constraint firstItem="pP3-Fj-rAI" firstAttribute="top" secondItem="w3r-3S-j0g" secondAttribute="bottom" constant="8" id="GFq-JB-Svu"/>
+                            <constraint firstItem="pP3-Fj-rAI" firstAttribute="leading" secondItem="QG0-UQ-CE7" secondAttribute="leading" constant="16" id="JsP-sb-sgN"/>
+                            <constraint firstItem="w3r-3S-j0g" firstAttribute="leading" secondItem="QG0-UQ-CE7" secondAttribute="leading" constant="16" id="NIi-ah-ftB"/>
+                            <constraint firstAttribute="centerY" secondItem="pP3-Fj-rAI" secondAttribute="centerY" id="geN-Ag-j13"/>
+                            <constraint firstAttribute="trailing" secondItem="pP3-Fj-rAI" secondAttribute="trailing" constant="16" id="isg-uK-ROo"/>
+                            <constraint firstItem="NHw-5T-Q70" firstAttribute="leading" secondItem="QG0-UQ-CE7" secondAttribute="leading" constant="16" id="j3a-h2-TGb"/>
+                            <constraint firstItem="NHw-5T-Q70" firstAttribute="top" secondItem="pP3-Fj-rAI" secondAttribute="bottom" constant="8" id="lq4-EV-ofc"/>
+                            <constraint firstItem="pP3-Fj-rAI" firstAttribute="top" secondItem="w3r-3S-j0g" secondAttribute="bottom" constant="8" id="nA3-gf-wCC"/>
+                            <constraint firstAttribute="trailing" secondItem="w3r-3S-j0g" secondAttribute="trailing" constant="16" id="qCm-xG-TfQ"/>
+                            <constraint firstAttribute="trailing" secondItem="NHw-5T-Q70" secondAttribute="trailing" constant="16" id="t0Y-uW-Cbg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Battery Monitor" id="Odv-ZZ-hOW"/>
+                    <connections>
+                        <outlet property="batteryLevelLabel" destination="pP3-Fj-rAI" id="UU7-ov-yh3"/>
+                        <outlet property="batteryStateLabel" destination="NHw-5T-Q70" id="SfP-bI-ZwW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0c1-ab-pOP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1210" y="361"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ccc-3k-y4X">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UQS-as-qz8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cLI-qq-HWS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cQY-ku-2Kg" kind="relationship" relationship="rootViewController" id="Ra9-Le-uyK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oU6-0A-Q4j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="398" y="361"/>
+        </scene>
+    </scenes>
+</document>

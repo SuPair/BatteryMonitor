@@ -9,11 +9,21 @@
 /* Begin PBXBuildFile section */
 		17C7FD961B1A7A53009BA69F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C7FD951B1A7A53009BA69F /* main.m */; };
 		17C7FD991B1A7A53009BA69F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C7FD981B1A7A53009BA69F /* AppDelegate.m */; };
-		17C7FD9C1B1A7A53009BA69F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C7FD9B1B1A7A53009BA69F /* ViewController.m */; };
-		17C7FD9F1B1A7A53009BA69F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17C7FD9D1B1A7A53009BA69F /* Main.storyboard */; };
 		17C7FDA11B1A7A53009BA69F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17C7FDA01B1A7A53009BA69F /* Images.xcassets */; };
 		17C7FDA41B1A7A53009BA69F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17C7FDA21B1A7A53009BA69F /* LaunchScreen.xib */; };
 		17C7FDB01B1A7A53009BA69F /* BatteryMonitorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C7FDAF1B1A7A53009BA69F /* BatteryMonitorTests.m */; };
+		17C7FDBB1B1A7B00009BA69F /* BatteryMonitor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17C7FDBA1B1A7B00009BA69F /* BatteryMonitor.storyboard */; };
+		17C7FDBF1B1A7C8F009BA69F /* BatteryMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C7FDBE1B1A7C8F009BA69F /* BatteryMonitor.m */; };
+		17C7FDC21B1AC2E2009BA69F /* CurrentStatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C7FDC11B1AC2E2009BA69F /* CurrentStatusViewController.m */; };
+		17C7FDCF1B1B76D8009BA69F /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C7FDCE1B1B76D8009BA69F /* InterfaceController.m */; };
+		17C7FDD21B1B76D8009BA69F /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C7FDD11B1B76D8009BA69F /* NotificationController.m */; };
+		17C7FDD51B1B76D8009BA69F /* GlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C7FDD41B1B76D8009BA69F /* GlanceController.m */; };
+		17C7FDD71B1B76D8009BA69F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17C7FDD61B1B76D8009BA69F /* Images.xcassets */; };
+		17C7FDDB1B1B76D8009BA69F /* BatteryMonitor WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 17C7FDDA1B1B76D8009BA69F /* BatteryMonitor WatchKit App.app */; };
+		17C7FDE31B1B76D8009BA69F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17C7FDE11B1B76D8009BA69F /* Interface.storyboard */; };
+		17C7FDE51B1B76D8009BA69F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17C7FDE41B1B76D8009BA69F /* Images.xcassets */; };
+		17C7FDE81B1B76D8009BA69F /* BatteryMonitor WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 17C7FDC81B1B76D8009BA69F /* BatteryMonitor WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		17C7FDF01B1B77A2009BA69F /* BatteryMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C7FDBE1B1A7C8F009BA69F /* BatteryMonitor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +34,35 @@
 			remoteGlobalIDString = 17C7FD8F1B1A7A53009BA69F;
 			remoteInfo = BatteryMonitor;
 		};
+		17C7FDDC1B1B76D8009BA69F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17C7FD881B1A7A53009BA69F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17C7FDD91B1B76D8009BA69F;
+			remoteInfo = "BatteryMonitor WatchKit App";
+		};
+		17C7FDE61B1B76D8009BA69F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17C7FD881B1A7A53009BA69F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17C7FDC71B1B76D8009BA69F;
+			remoteInfo = "BatteryMonitor WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		17C7FDEF1B1B76D9009BA69F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				17C7FDE81B1B76D8009BA69F /* BatteryMonitor WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		17C7FD901B1A7A53009BA69F /* BatteryMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BatteryMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,14 +70,30 @@
 		17C7FD951B1A7A53009BA69F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		17C7FD971B1A7A53009BA69F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		17C7FD981B1A7A53009BA69F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		17C7FD9A1B1A7A53009BA69F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		17C7FD9B1B1A7A53009BA69F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		17C7FD9E1B1A7A53009BA69F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		17C7FDA01B1A7A53009BA69F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		17C7FDA31B1A7A53009BA69F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		17C7FDA91B1A7A53009BA69F /* BatteryMonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BatteryMonitorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17C7FDAE1B1A7A53009BA69F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17C7FDAF1B1A7A53009BA69F /* BatteryMonitorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BatteryMonitorTests.m; sourceTree = "<group>"; };
+		17C7FDBA1B1A7B00009BA69F /* BatteryMonitor.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BatteryMonitor.storyboard; sourceTree = "<group>"; };
+		17C7FDBD1B1A7C8F009BA69F /* BatteryMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BatteryMonitor.h; sourceTree = "<group>"; };
+		17C7FDBE1B1A7C8F009BA69F /* BatteryMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BatteryMonitor.m; sourceTree = "<group>"; };
+		17C7FDC01B1AC2E2009BA69F /* CurrentStatusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentStatusViewController.h; sourceTree = "<group>"; };
+		17C7FDC11B1AC2E2009BA69F /* CurrentStatusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentStatusViewController.m; sourceTree = "<group>"; };
+		17C7FDC81B1B76D8009BA69F /* BatteryMonitor WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BatteryMonitor WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17C7FDCB1B1B76D8009BA69F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17C7FDCC1B1B76D8009BA69F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		17C7FDCD1B1B76D8009BA69F /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		17C7FDCE1B1B76D8009BA69F /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		17C7FDD01B1B76D8009BA69F /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		17C7FDD11B1B76D8009BA69F /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		17C7FDD31B1B76D8009BA69F /* GlanceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlanceController.h; sourceTree = "<group>"; };
+		17C7FDD41B1B76D8009BA69F /* GlanceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlanceController.m; sourceTree = "<group>"; };
+		17C7FDD61B1B76D8009BA69F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		17C7FDDA1B1B76D8009BA69F /* BatteryMonitor WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BatteryMonitor WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17C7FDE01B1B76D8009BA69F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17C7FDE21B1B76D8009BA69F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		17C7FDE41B1B76D8009BA69F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +111,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		17C7FDC51B1B76D8009BA69F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -65,6 +126,8 @@
 			children = (
 				17C7FD921B1A7A53009BA69F /* BatteryMonitor */,
 				17C7FDAC1B1A7A53009BA69F /* BatteryMonitorTests */,
+				17C7FDC91B1B76D8009BA69F /* BatteryMonitor WatchKit Extension */,
+				17C7FDDE1B1B76D8009BA69F /* BatteryMonitor WatchKit App */,
 				17C7FD911B1A7A53009BA69F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +137,8 @@
 			children = (
 				17C7FD901B1A7A53009BA69F /* BatteryMonitor.app */,
 				17C7FDA91B1A7A53009BA69F /* BatteryMonitorTests.xctest */,
+				17C7FDC81B1B76D8009BA69F /* BatteryMonitor WatchKit Extension.appex */,
+				17C7FDDA1B1B76D8009BA69F /* BatteryMonitor WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,12 +148,14 @@
 			children = (
 				17C7FD971B1A7A53009BA69F /* AppDelegate.h */,
 				17C7FD981B1A7A53009BA69F /* AppDelegate.m */,
-				17C7FD9A1B1A7A53009BA69F /* ViewController.h */,
-				17C7FD9B1B1A7A53009BA69F /* ViewController.m */,
-				17C7FD9D1B1A7A53009BA69F /* Main.storyboard */,
+				17C7FDBA1B1A7B00009BA69F /* BatteryMonitor.storyboard */,
 				17C7FDA01B1A7A53009BA69F /* Images.xcassets */,
 				17C7FDA21B1A7A53009BA69F /* LaunchScreen.xib */,
 				17C7FD931B1A7A53009BA69F /* Supporting Files */,
+				17C7FDBD1B1A7C8F009BA69F /* BatteryMonitor.h */,
+				17C7FDBE1B1A7C8F009BA69F /* BatteryMonitor.m */,
+				17C7FDC01B1AC2E2009BA69F /* CurrentStatusViewController.h */,
+				17C7FDC11B1AC2E2009BA69F /* CurrentStatusViewController.m */,
 			);
 			path = BatteryMonitor;
 			sourceTree = "<group>";
@@ -119,6 +186,48 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		17C7FDC91B1B76D8009BA69F /* BatteryMonitor WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				17C7FDCD1B1B76D8009BA69F /* InterfaceController.h */,
+				17C7FDCE1B1B76D8009BA69F /* InterfaceController.m */,
+				17C7FDD01B1B76D8009BA69F /* NotificationController.h */,
+				17C7FDD11B1B76D8009BA69F /* NotificationController.m */,
+				17C7FDD31B1B76D8009BA69F /* GlanceController.h */,
+				17C7FDD41B1B76D8009BA69F /* GlanceController.m */,
+				17C7FDD61B1B76D8009BA69F /* Images.xcassets */,
+				17C7FDCA1B1B76D8009BA69F /* Supporting Files */,
+			);
+			path = "BatteryMonitor WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		17C7FDCA1B1B76D8009BA69F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				17C7FDCB1B1B76D8009BA69F /* Info.plist */,
+				17C7FDCC1B1B76D8009BA69F /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		17C7FDDE1B1B76D8009BA69F /* BatteryMonitor WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				17C7FDE11B1B76D8009BA69F /* Interface.storyboard */,
+				17C7FDE41B1B76D8009BA69F /* Images.xcassets */,
+				17C7FDDF1B1B76D8009BA69F /* Supporting Files */,
+			);
+			path = "BatteryMonitor WatchKit App";
+			sourceTree = "<group>";
+		};
+		17C7FDDF1B1B76D8009BA69F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				17C7FDE01B1B76D8009BA69F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,10 +238,12 @@
 				17C7FD8C1B1A7A53009BA69F /* Sources */,
 				17C7FD8D1B1A7A53009BA69F /* Frameworks */,
 				17C7FD8E1B1A7A53009BA69F /* Resources */,
+				17C7FDEF1B1B76D9009BA69F /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				17C7FDE71B1B76D8009BA69F /* PBXTargetDependency */,
 			);
 			name = BatteryMonitor;
 			productName = BatteryMonitor;
@@ -157,6 +268,39 @@
 			productReference = 17C7FDA91B1A7A53009BA69F /* BatteryMonitorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		17C7FDC71B1B76D8009BA69F /* BatteryMonitor WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17C7FDEC1B1B76D9009BA69F /* Build configuration list for PBXNativeTarget "BatteryMonitor WatchKit Extension" */;
+			buildPhases = (
+				17C7FDC41B1B76D8009BA69F /* Sources */,
+				17C7FDC51B1B76D8009BA69F /* Frameworks */,
+				17C7FDC61B1B76D8009BA69F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17C7FDDD1B1B76D8009BA69F /* PBXTargetDependency */,
+			);
+			name = "BatteryMonitor WatchKit Extension";
+			productName = "BatteryMonitor WatchKit Extension";
+			productReference = 17C7FDC81B1B76D8009BA69F /* BatteryMonitor WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		17C7FDD91B1B76D8009BA69F /* BatteryMonitor WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17C7FDE91B1B76D9009BA69F /* Build configuration list for PBXNativeTarget "BatteryMonitor WatchKit App" */;
+			buildPhases = (
+				17C7FDD81B1B76D8009BA69F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BatteryMonitor WatchKit App";
+			productName = "BatteryMonitor WatchKit App";
+			productReference = 17C7FDDA1B1B76D8009BA69F /* BatteryMonitor WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,10 +312,19 @@
 				TargetAttributes = {
 					17C7FD8F1B1A7A53009BA69F = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 9538FKS583;
 					};
 					17C7FDA81B1A7A53009BA69F = {
 						CreatedOnToolsVersion = 6.3.2;
 						TestTargetID = 17C7FD8F1B1A7A53009BA69F;
+					};
+					17C7FDC71B1B76D8009BA69F = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 9538FKS583;
+					};
+					17C7FDD91B1B76D8009BA69F = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 9538FKS583;
 					};
 				};
 			};
@@ -190,6 +343,8 @@
 			targets = (
 				17C7FD8F1B1A7A53009BA69F /* BatteryMonitor */,
 				17C7FDA81B1A7A53009BA69F /* BatteryMonitorTests */,
+				17C7FDC71B1B76D8009BA69F /* BatteryMonitor WatchKit Extension */,
+				17C7FDD91B1B76D8009BA69F /* BatteryMonitor WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -199,9 +354,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17C7FD9F1B1A7A53009BA69F /* Main.storyboard in Resources */,
 				17C7FDA41B1A7A53009BA69F /* LaunchScreen.xib in Resources */,
 				17C7FDA11B1A7A53009BA69F /* Images.xcassets in Resources */,
+				17C7FDBB1B1A7B00009BA69F /* BatteryMonitor.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +367,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		17C7FDC61B1B76D8009BA69F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17C7FDD71B1B76D8009BA69F /* Images.xcassets in Resources */,
+				17C7FDDB1B1B76D8009BA69F /* BatteryMonitor WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17C7FDD81B1B76D8009BA69F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17C7FDE31B1B76D8009BA69F /* Interface.storyboard in Resources */,
+				17C7FDE51B1B76D8009BA69F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -219,9 +392,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17C7FD9C1B1A7A53009BA69F /* ViewController.m in Sources */,
 				17C7FD991B1A7A53009BA69F /* AppDelegate.m in Sources */,
 				17C7FD961B1A7A53009BA69F /* main.m in Sources */,
+				17C7FDC21B1AC2E2009BA69F /* CurrentStatusViewController.m in Sources */,
+				17C7FDBF1B1A7C8F009BA69F /* BatteryMonitor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +407,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		17C7FDC41B1B76D8009BA69F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17C7FDD21B1B76D8009BA69F /* NotificationController.m in Sources */,
+				17C7FDCF1B1B76D8009BA69F /* InterfaceController.m in Sources */,
+				17C7FDF01B1B77A2009BA69F /* BatteryMonitor.m in Sources */,
+				17C7FDD51B1B76D8009BA69F /* GlanceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -241,23 +426,33 @@
 			target = 17C7FD8F1B1A7A53009BA69F /* BatteryMonitor */;
 			targetProxy = 17C7FDAA1B1A7A53009BA69F /* PBXContainerItemProxy */;
 		};
+		17C7FDDD1B1B76D8009BA69F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17C7FDD91B1B76D8009BA69F /* BatteryMonitor WatchKit App */;
+			targetProxy = 17C7FDDC1B1B76D8009BA69F /* PBXContainerItemProxy */;
+		};
+		17C7FDE71B1B76D8009BA69F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17C7FDC71B1B76D8009BA69F /* BatteryMonitor WatchKit Extension */;
+			targetProxy = 17C7FDE61B1B76D8009BA69F /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		17C7FD9D1B1A7A53009BA69F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				17C7FD9E1B1A7A53009BA69F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		17C7FDA21B1A7A53009BA69F /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				17C7FDA31B1A7A53009BA69F /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		17C7FDE11B1B76D8009BA69F /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17C7FDE21B1B76D8009BA69F /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -347,7 +542,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = BatteryMonitor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -357,7 +554,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = BatteryMonitor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -397,6 +596,66 @@
 			};
 			name = Release;
 		};
+		17C7FDEA1B1B76D9009BA69F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = BatteryMonitor_WatchKit_Extension;
+				INFOPLIST_FILE = "BatteryMonitor WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		17C7FDEB1B1B76D9009BA69F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IBSC_MODULE = BatteryMonitor_WatchKit_Extension;
+				INFOPLIST_FILE = "BatteryMonitor WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		17C7FDED1B1B76D9009BA69F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BatteryMonitor WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		17C7FDEE1B1B76D9009BA69F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "BatteryMonitor WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -422,6 +681,22 @@
 			buildConfigurations = (
 				17C7FDB71B1A7A53009BA69F /* Debug */,
 				17C7FDB81B1A7A53009BA69F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		17C7FDE91B1B76D9009BA69F /* Build configuration list for PBXNativeTarget "BatteryMonitor WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17C7FDEA1B1B76D9009BA69F /* Debug */,
+				17C7FDEB1B1B76D9009BA69F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		17C7FDEC1B1B76D9009BA69F /* Build configuration list for PBXNativeTarget "BatteryMonitor WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17C7FDED1B1B76D9009BA69F /* Debug */,
+				17C7FDEE1B1B76D9009BA69F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
